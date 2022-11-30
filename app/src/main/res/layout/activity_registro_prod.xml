@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroProdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF914D"
+            android:fontFamily="@font/quicksand"
+            android:padding="15dp"
+            android:text="REGISTRO DEL PRODUCTO"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/txtRegCod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand"
+                android:hint="Escribe código o escanea"
+                android:padding="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnRegLector"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:background="@drawable/escaner"
+                android:duplicateParentState="true"
+                android:editable="false"
+                android:fontFamily="@font/quicksand"
+                app:backgroundTint="#7ED957">
+
+            </Button>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtRegNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:hint="Escribe nombre"
+            android:padding="15dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtRegDescrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe descripcion"
+            android:fontFamily="@font/quicksand"
+            android:padding="15dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtRegPre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:hint="Escribe precio"
+            android:padding="15dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnRegPro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/quicksand"
+                android:text="Registrar"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:backgroundTint="#8C52FF" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
